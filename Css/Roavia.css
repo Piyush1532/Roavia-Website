@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..300;0,600..900;1,100..300;1,600..900&family=Poppins:ital,wght@0,100..300;0,600..900;1,100..300;1,600..900&display=swap');
 
 :root{
     --header-height:3.5rem;
@@ -15,13 +14,13 @@
 
     --body-font:"Poppins",sans-serif;
     --second-font: "Montserrat", sans-serif;
-    --biggest-font-sixe:2.75rem;
+    --biggest-font-size:2.75rem;
     --h1-font-size:1.5rem;
     --h2-font-size:1.25rem;
     --h3-font-size:1rem;
-    --nornal-font-size:.938rem;
-    --small-font-size:.813rem;
-    --nornal-font-size:.75rem;
+    --normal-font-size:0.938rem;
+    --small-font-size:0.813rem;
+    --normal-font-size:.75rem;
 
     
     --font-regular:400;
@@ -48,7 +47,7 @@ html{
 
 body,button,input{
     font-family: var(--body-font);
-    font-size: var(--nornal-font-size);
+    font-size: var(--normal-font-size);
     color: var(--text-color);
 }
 
@@ -91,7 +90,7 @@ img{
 .container{
     max-width: 1120px;
     margin-bottom: 1.5rem;
-    }
+    } 
     
     .grid{
         display: grid;
@@ -102,7 +101,7 @@ img{
         padding-bottom: 5rem 1rem;
     }
     
-    .section--title{
+    .section-title{
         text-align: center;
         font-size: var(--h1-font-size);
         margin-bottom: 1.5rem;
@@ -111,7 +110,7 @@ img{
     .main{
         overflow: hidden;
     }
-
+ */
 
 
 
@@ -143,24 +142,70 @@ img{
  font-weight: var(--font-semi-bold);   
 }
 
-
+.nav-toggle,.nav-close{
+display: flex;
+font-size: 1.25rem;
+color: var(--title-color);
+cursor: pointer;
+}
 
 
 
 /* =-------------------HEader &Nav_ end----------------- */
 
 
+@media screen and (max-width:1023px) {
+     .nav-menu{
+        position: fixed;
+        top: -100%;
+        left: 0;
+        background-color: hsla(0,0%,0%,.3);
+    
+        width: 100%;
+        padding-block: 4rem;
+        backdrop-filter:blur(24px) ;
+        -webkit-backdrop-filter: blur(24px);
+        transition: top .4s; 
+}
+
+    .nav-list{
+     text-align: center;
+     display: flex;  
+     flex-direction: column;
+     row-gap: 2.5rem; 
+    }
+
+    .nav-link{
+        color:var(--title-color) ;
+        font-family: var(--second-font);
+        font-weight: var(--font-medium);
+    }
+
+
+
+    .nav-close{
+      position: absolute;
+      top: 1rem;
+      right: 1.5rem;
+
+    }
+}
+
+.show-menu{
+    top: 0;
+}
+
 
 
 
 @media screen and (min-width:1152px) {
     :root{
-        --biggest-font-sixe:5.5rem;
+        --biggest-font-size:5.5rem;
         --h1-font-size:2.5rem;
         --h2-font-size:1.5rem;
         --h3-font-size:1.25rem;
-        --nornal-font-size:1rem;
-        --small-font-size:.875rem;
-        --nornal-font-size:.813rem;
+        --normal-font-size:1rem;
+        --small-font-size:0.875rem;
+        --normal-font-size:0.813rem;
     }
 }
