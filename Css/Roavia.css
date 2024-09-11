@@ -370,10 +370,10 @@ font-weight: 500;
 /* POpular design end */
 /* explore design start */
 .explore{
- position: absolute;   
+ position: relative;   
 }
 .explore-image{
-    position: absolute;
+    position: relative;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -403,7 +403,7 @@ font-weight: 500;
 
 .explore-content{
     position: relative;
-    padding-top: 16rem;
+    padding-top:10px;
     text-align: center;
     row-gap: 2.5rem;
 }
@@ -417,6 +417,7 @@ font-weight: 500;
 
 .explore-prefile{
     width: 30px;
+    height: 30px;
     border-radius: 50%;
 }
 .explore-name{
@@ -425,7 +426,37 @@ font-weight: 500;
 }
 /* explore design end */
 
+/* join section */
+.join-container{
+row-gap: 4rem;
+display: grid;
+padding-bottom: 2.5rem;
+}
 
+.join-data{
+    text-align: center;
+}
+.join-description{
+ margin-bottom: 2rem;   
+}
+.join-form{
+    display: grid;
+    row-gap: 1rem;
+}
+.join-input{
+    padding: 1.25rem 1rem;
+    background-color: var(--container-color);
+}
+.join-button{
+cursor: pointer;
+}
+
+.join-image{
+ position: absolute;
+ justify-content: center;
+ overflow: hidden;   
+}
+/* join section end */
 
 
 
