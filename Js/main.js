@@ -31,3 +31,13 @@ const blurHeader=()=>{
      header.classList.remove("blur-header")
 }
 window.addEventListener("scroll",blurHeader)
+
+
+const srollUp=()=>{
+
+    const scroolUp=document.getElementById("scrollup")
+    this.scrollY>350? scroolUp.classList.add("show-scrool"):
+    scroolUp.classList.remove("show-scrool")
+}
+
+window.addEventListener("scroll",srollUp)
